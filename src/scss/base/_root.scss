@@ -1,0 +1,9 @@
+@use "../abstracts/index" as abstracts;
+
+:root {
+  @include abstracts.generate-root-vars(abstracts.$colors);
+  @include abstracts.generate-root-vars(abstracts.$font-sizes);
+  @include abstracts.generate-root-vars(abstracts.$line-heights);
+
+  font-size: 16px;
+}

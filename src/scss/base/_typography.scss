@@ -1,0 +1,38 @@
+@use "../abstracts/index" as abstracts;
+
+.h1 {
+  @include abstracts.set-font-styles(
+    $font-weight: 700,
+    $font-size: var(--fs-h1),
+    $line-height: var(--fs-h1)
+  );
+}
+
+.h2 {
+  @include abstracts.set-font-styles(
+    $font-weight: 700,
+    $font-size: var(--fs-h2),
+    $line-height: var(--fs-h2)
+  );
+}
+
+.h3 {
+  @include abstracts.set-font-styles(
+    $font-size: var(--fs-h3),
+    $line-height: var(--fs-h3)
+  );
+}
+
+.h4 {
+  @include abstracts.set-font-styles(
+    $font-size: var(--fs-h4),
+    $line-height: var(--fs-h4)
+  );
+}
+
+body {
+  @include abstracts.set-font-styles(
+    $font-size: var(--fs-body),
+    $line-height: var(--fs-body)
+  );
+}

@@ -1,0 +1,22 @@
+@use "./type";
+
+@mixin generate-root-vars($map) {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    --#{$prefix}-#{$key}: #{$value};
+  }
+}
+
+@mixin set-font-styles(
+  $font-family: type.$font-family,
+  $font-weight: 400,
+  $font-size: 1rem,
+  $line-height: 100%
+) {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
