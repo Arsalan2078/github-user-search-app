@@ -1,18 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import IconSun from "./IconSun";
 import IconMoon from "./IconMoon";
 
 function ThemeToggler() {
-  const [theme, setTheme] = useState("theme-light");
-  const $root = document.getElementById("root");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") || "theme-light"
+  );
 
-  $root?.classList.add(theme);
+  useEffect(() => {
+    const $root = document.getElementById("root");
+    $root?.classList.add(theme);
+  }, [theme]);
 
   const setThemeHandler = () => {
     setTheme((prevTheme) => {
       const prevValue = prevTheme;
       const newValue =
         prevTheme === "theme-light" ? "theme-dark" : "theme-light";
+
+      localStorage.setItem("theme", newValue);
+      const $root = document.getElementById("root");
 
       $root?.classList.remove(prevValue);
       $root?.classList.add(newValue);
