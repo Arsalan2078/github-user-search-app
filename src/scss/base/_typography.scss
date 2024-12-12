@@ -1,6 +1,6 @@
 @use "../abstracts/index" as abstracts;
 
-.h1 {
+.text-preset-1 {
   @include abstracts.set-font-styles(
     $font-weight: 700,
     $font-size: var(--fs-h1),
@@ -8,7 +8,7 @@
   );
 }
 
-.h2 {
+.text-preset-2 {
   @include abstracts.set-font-styles(
     $font-weight: 700,
     $font-size: var(--fs-h2),
@@ -16,17 +16,27 @@
   );
 }
 
-.h3 {
+.text-preset-3 {
   @include abstracts.set-font-styles(
     $font-size: var(--fs-h3),
     $line-height: var(--fs-h3)
   );
 }
 
-.h4 {
+.text-preset-4 {
   @include abstracts.set-font-styles(
     $font-size: var(--fs-h4),
     $line-height: var(--fs-h4)
+  );
+}
+
+.text-preset-4-bold {
+  @include abstracts.set-font-styles(
+    $font-weight: 700,
+    $font-size: var(--fs-h4),
+    $line-height: var(--fs-h4),
+    $letter-spacing: 0.15625rem,
+    $text-transform: uppercase
   );
 }
 

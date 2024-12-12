@@ -1,0 +1,15 @@
+.theme-dark {
+  background-color: var(--clr-blue-900);
+  color: var(--clr-neutral-0);
+
+  .theme-toggler {
+    &:hover,
+    &:focus {
+      color: var(--clr-slate-400);
+
+      svg path {
+        fill: var(--clr-slate-400);
+      }
+    }
+  }
+}

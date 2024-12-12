@@ -1,2 +1,9 @@
 @use "./abstracts/index" as abstracts;
 @use "./base/index" as base;
+@use "./components/index" as components;
+@use "./themes/index" as themes;
+@use "./layout/index" as layout;
+
+// * {
+//   outline: 1px solid red;
+// }

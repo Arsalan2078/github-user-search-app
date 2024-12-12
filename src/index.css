@@ -102,9 +102,11 @@ meter {
 }
 :root {
   --clr-azure: hsl(211.53, 100%, 50%);
+  --clr-slate-850: hsl(220, 18.07%, 16.27%);
   --clr-slate-800: hsl(216.52, 21.1%, 21.37%);
   --clr-slate-550: hsl(216.75, 34.78%, 45.1%);
   --clr-slate-500: hsl(216.73, 19.52%, 50.78%);
+  --clr-slate-400: hsl(222.35, 44.16%, 69.8%);
   --clr-neutral-20: hsl(226.67, 100%, 98.24%);
   --clr-neutral-10: hsl(0, 0%, 99.61%);
   --clr-neutral-0: hsl(0, 0%, 100%);
@@ -124,32 +126,49 @@ meter {
   font-size: 16px;
 }
 
-.h1 {
+.text-preset-1 {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: var(--fs-h1);
   line-height: var(--fs-h1);
+  letter-spacing: 0rem;
+  text-transform: none;
 }
 
-.h2 {
+.text-preset-2 {
   font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: var(--fs-h2);
   line-height: var(--fs-h2);
+  letter-spacing: 0rem;
+  text-transform: none;
 }
 
-.h3 {
+.text-preset-3 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: var(--fs-h3);
   line-height: var(--fs-h3);
+  letter-spacing: 0rem;
+  text-transform: none;
 }
 
-.h4 {
+.text-preset-4 {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: var(--fs-h4);
   line-height: var(--fs-h4);
+  letter-spacing: 0rem;
+  text-transform: none;
+}
+
+.text-preset-4-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: var(--fs-h4);
+  line-height: var(--fs-h4);
+  letter-spacing: 0.15625rem;
+  text-transform: uppercase;
 }
 
 body {
@@ -157,6 +176,62 @@ body {
   font-weight: 400;
   font-size: var(--fs-body);
   line-height: var(--fs-body);
+  letter-spacing: 0rem;
+  text-transform: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  flex-basis: 35.75rem;
+}
+
+.theme-toggler {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.theme-dark {
+  background-color: var(--clr-blue-900);
+  color: var(--clr-neutral-0);
+}
+.theme-dark .theme-toggler:hover, .theme-dark .theme-toggler:focus {
+  color: var(--clr-slate-400);
+}
+.theme-dark .theme-toggler:hover svg path, .theme-dark .theme-toggler:focus svg path {
+  fill: var(--clr-slate-400);
+}
+
+.theme-light {
+  background-color: var(--clr-neutral-20);
+  color: var(--clr-slate-550);
+}
+.theme-light .theme-toggler:hover, .theme-light .theme-toggler:focus {
+  color: var(--clr-slate-850);
+}
+.theme-light .theme-toggler:hover svg path, .theme-light .theme-toggler:focus svg path {
+  fill: var(--clr-slate-850);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

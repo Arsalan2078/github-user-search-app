@@ -1,0 +1,18 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+}
+
+#root {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  flex-basis: 35.75rem;
+}
