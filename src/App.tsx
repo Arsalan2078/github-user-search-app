@@ -1,19 +1,24 @@
 import css from "./App.module.scss";
+import TextPresets from "./components/TextPresets";
 
 export default function App() {
-  return <div className={css.app}>
-    devfinder
+  return (
+    <div className={css.app}>
+      <TextPresets />
 
-    Light
-    Dark
+      {/* devfinder
 
-    Search GitHub username...
-    Search
+      Light
+      Dark
 
-    Joined
+      Search GitHub username...
+      Search
 
-    Repos
-    Followers
-    Following
-  </div>;
+      Joined
+
+      Repos
+      Followers
+      Following */}
+    </div>
+  );
 }

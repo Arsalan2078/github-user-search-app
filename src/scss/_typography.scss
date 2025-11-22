@@ -1,0 +1,55 @@
+@layer {
+  [data-text-preset] {
+    font-family: var(--ff-space-mono);
+    letter-spacing: var(--ls-0);
+  }
+
+  [data-text-preset="1"] {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-26);
+    line-height: var(--lh-120);
+  }
+
+  [data-text-preset="2"] {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-22);
+    line-height: var(--lh-140);
+  }
+
+  [data-text-preset="3"] {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-13-18);
+    line-height: var(--lh-140);
+  }
+
+  [data-text-preset="4"] {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-16);
+    line-height: var(--lh-150);
+  }
+
+  [data-text-preset="5"] {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-16);
+    line-height: var(--lh-150);
+  }
+
+  [data-text-preset="6"] {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-15);
+    line-height: var(--lh-150);
+  }
+
+  [data-text-preset="7"] {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-13);
+    line-height: var(--lh-150);
+  }
+
+  [data-text-preset="8"] {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-13);
+    line-height: var(--lh-140);
+    letter-spacing: var(--ls-2-half);
+  }
+}

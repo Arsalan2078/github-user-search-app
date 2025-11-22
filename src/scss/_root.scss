@@ -17,24 +17,20 @@
   // fonts
   --ff-space-mono: "Space Mono", monospace;
 
-  --fw-regular: 400;
-  --fw-bold: 700;
+  --fw-400: 400;
+  --fw-700: 700;
 
-  --fs-: 1.625rem;
-  --fs-: 1.375rem;
-  --fs-3: clamp(0.8125rem, 0.5156rem + 1.385vw, 1.125rem);
-  --fs-: 1rem;
-  --fs-: 0.9375rem;
-  --fs-: 0.8125rem;
+  --fs-26: 1.625rem;
+  --fs-22: 1.375rem;
+  --fs-13-18: clamp(0.8125rem, 0.5156rem + 1.385cqw, 1.125rem);
+  --fs-16: 1rem;
+  --fs-15: 0.9375rem;
+  --fs-13: 0.8125rem;
 
   --lh-120: 1.2;
   --lh-140: 1.4;
   --lh-150: 1.5;
 
   --ls-0: 0;
-  --ls-wide: calc(2.5 / 16 * 1rem);
-
-  // root styles
-  font-family: var(--ff-space-mono);
-  letter-spacing: var(--ls-0);
+  --ls-2-half: calc(2.5 / 16 * 1rem);
 }
