@@ -1,0 +1,17 @@
+@font-face {
+  font-display: swap;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Space Mono"),
+    url("/fonts/space-mono-v17-latin-regular.woff2") format("woff2");
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Space Mono"),
+    url("/fonts/space-mono-v17-latin-700.woff2") format("woff2");
+}

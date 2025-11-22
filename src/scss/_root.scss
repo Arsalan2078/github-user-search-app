@@ -1,0 +1,40 @@
+:root {
+  // colors
+  --clr-neutral-900: oklch(0.2317 0.0375 263.44);
+  --clr-neutral-800: oklch(0.2895 0.0558 265.99);
+  --clr-neutral-700: oklch(0.3227 0.0279 259.13);
+  --clr-neutral-500: oklch(0.5221 0.086 259.27);
+  --clr-neutral-300: oklch(0.5824 0.0515 259.44);
+  --clr-neutral-200: oklch(0.7208 0.0738 266.99);
+  --clr-neutral-100: oklch(0.9796 0.0095 273.36);
+  --clr-neutral-0: oklch(1 0 0);
+
+  --clr-blue-300: oklch(0.7292 0.144 252.72);
+  --clr-blue-500: oklch(0.6007 0.218867 257.6301);
+
+  --clr-red-500: oklch(0.6523 0.2137 25.38);
+
+  // fonts
+  --ff-space-mono: "Space Mono", monospace;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-: 1.625rem;
+  --fs-: 1.375rem;
+  --fs-3: clamp(0.8125rem, 0.5156rem + 1.385vw, 1.125rem);
+  --fs-: 1rem;
+  --fs-: 0.9375rem;
+  --fs-: 0.8125rem;
+
+  --lh-120: 1.2;
+  --lh-140: 1.4;
+  --lh-150: 1.5;
+
+  --ls-0: 0;
+  --ls-wide: calc(2.5 / 16 * 1rem);
+
+  // root styles
+  font-family: var(--ff-space-mono);
+  letter-spacing: var(--ls-0);
+}
